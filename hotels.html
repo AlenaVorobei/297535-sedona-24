@@ -7,31 +7,34 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="header-logo" href="index.html">
-          <img src="img/index-logo.svg" width="140" height="72" alt="Логотип города Седона">
-        </a>
+        <h1 class="visually-hidden">
+          <a class="header-logo" href="index.html">
+            Город Седона
+            <img src="img/index-logo.svg" width="140" height="72" alt="Логотип города Седона">
+          </a>
+        </h1>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="gallery.html">Фото и видео</a></li>
           <li><a href="state-map.html">Карта штата</a></li>
           <li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
         </ul>
-       </nav>
+      </nav>
     </header>
     <main class="container">
-      <h1 class="visuallyhidden">Бронирование гостиницы</h1>
+      <h2 class="visually-hidden">Бронирование гостиницы</h2>
       <!-- Здесь будет форма -->
       <section class="hotel-catalog">
-        <h2 class="visuallyhidden">Список гостиниц</h2>
+        <h3 class="visually-hidden">Список гостиниц</h3>
         <ul class="hotel-list">
           <li class="hotel-item">
-            <section class="result">
-              <h3>
+            <article class="hotel">
+              <h4>
                 <a href="hotel-item.html">Amara resort & SPA</a>
-              </h3>
-              <span>
-              <img src="imghotel-1.jpg" alt="Гостиница Amara resort & SPA">
-              </span>
+              </h4>
+              <div>
+                <img src="imghotel-1.jpg" alt="Гостиница Amara resort & SPA">
+              </div>
               <div class="hotel-category">
                 <p class="category-name">Гостиница</p>
                 <a class="button-info" href="#">Подробнее</a>
@@ -40,8 +43,6 @@
                 <p class="price">от 4000 Р.</p>
                 <a class="button" href="#">Забронировать</a>
               </div>
-            </section>
-            <section class="rate-main">
               <div class="stars-rate">
                 <img src="star.jpg">
                 <img src="star.jpg">
@@ -51,16 +52,16 @@
               <div class="rate">
                 <p>Рейтинг 8,5</p>
               </div>
-            </section>
+            </article>
           </li>
           <li class="hotel-item">
-            <section class="result">
-              <h3>
+            <article class="hotel">
+              <h4>
                 <a href="hotel-item.html">Desert Quail Inn</a>
-              </h3>
-              <span>
-              <img src="imghotel-2.jpg" alt="Мотель Desert Quail Inn">
-              </span>
+              </h4>
+              <div>
+                <img src="imghotel-2.jpg" alt="Мотель Desert Quail Inn">
+              </div>
               <div class="hotel-category">
                 <p class="category-name">Мотель</p>
                 <a class="button-info" href="#">Подробнее</a>
@@ -69,8 +70,6 @@
                 <p class="price">от 2000 Р.</p>
                 <a class="button" href="#">Забронировать</a>
               </div>
-            </section>
-            <section class="rate-main">
               <div class="stars-rate">
                 <img src="star.jpg">
                 <img src="star.jpg">
@@ -78,16 +77,16 @@
               <div class="rate">
                 <p>Рейтинг 8,9</p>
               </div>
-            </section>
+            </article>
           </li>
           <li class="hotel-item">
-            <section class="result">
-              <h3>
+            <article class="hotel">
+              <h4>
                 <a href="hotel-item.html">Villas at poco diablo</a>
-              </h3>
-              <span>
-              <img src="imghotel-3.jpg" alt="Апартаменты Villas at poco diablo">
-              </span>
+              </h4>
+              <div>
+                <img src="imghotel-3.jpg" alt="Апартаменты Villas at poco diablo">
+              </div>
               <div class="hotel-category">
                 <p class="category-name">Апатраменты</p>
                 <a class="button-info" href="#">Подробнее</a>
@@ -96,8 +95,6 @@
                 <p class="price">от 4000 Р.</p>
                 <a class="button" href="#">Забронировать</a>
               </div>
-            </section>
-            <section class="rate-main">
               <div class="stars-rate">
                 <img src="star.jpg">
                 <img src="star.jpg">
@@ -106,7 +103,7 @@
               <div class="rate">
                 <p>Рейтинг 9,2</p>
               </div>
-            </section>
+            </article>
           </li>
         </ul>
       </section>
