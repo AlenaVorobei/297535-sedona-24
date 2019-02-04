@@ -23,7 +23,53 @@
     </header>
     <main class="container">
       <h2 class="visually-hidden">Бронирование гостиницы</h2>
-      <!-- Здесь будет форма -->
+      <section class="filter">
+        <h2 class="visually-hidden">Фильтр гостиниц</h2>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="infrastructure">
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li class="filter-option">
+                <label class="option-name" for="swimmingpool">Бассейн</label>
+                <input type="checkbox" id="swimmingpool" checked>
+              </li>
+              <li class="filter-option">
+                <label class="option-name" for="parking">Парковка</label>
+                <input type="checkbox" id="parking">
+              </li>
+              <li class="filter-option">
+                <label class="option-name" for="internet">Wi-fi</label>
+                <input type="checkbox" id="internet">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="hotel-category">
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li class="filter-option">
+                <label class="option-name" for="hotel">Гостиница</label>
+                <input type="checkbox" id="hotel" checked>
+              </li>
+              <li class="filter-option">
+                <label class="option-name" for="motel">Мотель</label>
+                <input type="checkbox" id="motel" checked>
+              </li>
+              <li class="filter-option">
+                <label class="option-name" for="apartments">Апартаменты</label>
+                <input type="checkbox" id="apartments" checked>
+              </li>
+            </ul>
+          </fieldset>
+          <label for="price">Стоимость в сутки (Р):</label>
+          <p class="price-range">от 0</p>
+          <p class="price-range">до 3000</p>
+          <input type="range" id="price" step="1" min="0" max="3000">
+          <button type="submit" class="filter-button">Показать</button>
+        </form>
+        
+        <!-- Здесь будет сортировка -->
+
+      </section>
       <section class="hotel-catalog">
         <h3 class="visually-hidden">Список гостиниц</h3>
         <ul class="hotel-list">
