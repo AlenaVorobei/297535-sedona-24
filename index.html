@@ -37,7 +37,23 @@
         <p class="booking-info">Укажите предполагаемые даты поездки и мы покажем
          вам лучшие предложения гостиниц в Седоне</p>
         <span class="button">Поиск гостиницы в Седоне</span>
-       <!-- Здесь будет форма -->
+        <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
+          <label for="chek-in-date">Дата заезда</label>
+          <input type="text" name="chek-in-date" id="chek-in-date" placeholder="24 апреля 2017" required>
+          <label for="chek-out-date">Дата заезда</label>
+          <input type="text" name="chek-out-date" id="chek-out-date" placeholder="4 июля 2017" required>
+          <div class="half-width">
+            <label for="adults-number">Взрослые</label>
+            <input type="number" name="adults-number" id="adults-number" min="1" step="1" value="2">
+          </div>
+          <div class="half-width">
+            <label for="kids-number">Дети</label>
+            <input type="number" name="kids-number" id="kids-number" min="0" step="1" value="0">
+          </div>
+          <div class="button">
+            <input type="submit" value="Найти">
+          </div>
+        </form>
       </section>
       <section class="map">
        <!-- Здесь будет карта -->
@@ -46,9 +62,9 @@
     <footer class="main-footer">
       <span class="hashtag">#VisitSedona</span>
       <section class="footer-social">
-        <a class="social-button" href="#">Твиттер</a>
-        <a class="social-button" href="#">Фейсбук</a>
-        <a class="social-button" href="#">Ютуб</a>
+        <a class="social-button" href="#">Седона в Твиттер</a>
+        <a class="social-button" href="#">Седона в Фейсбук</a>
+        <a class="social-button" href="#">Седона в Ютуб</a>
       </section>
       <div class="footer-copyright">
         <b>Website by:</b>
