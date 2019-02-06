@@ -24,7 +24,6 @@
     <main class="container">
       <h2 class="visually-hidden">Бронирование гостиницы</h2>
       <section class="filter">
-        <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="infrastructure">
             <legend>Инфраструктура:</legend>
@@ -48,27 +47,39 @@
             <ul>
               <li class="filter-option">
                 <label class="option-name" for="hotel">Гостиница</label>
-                <input type="checkbox" id="hotel" checked>
+                <input type="checkbox" name="hotel" id="hotel" checked>
               </li>
               <li class="filter-option">
                 <label class="option-name" for="motel">Мотель</label>
-                <input type="checkbox" id="motel" checked>
+                <input type="checkbox" name="motel" id="motel" checked>
               </li>
               <li class="filter-option">
                 <label class="option-name" for="apartments">Апартаменты</label>
-                <input type="checkbox" id="apartments" checked>
+                <input type="checkbox" name="apartments" id="apartments" checked>
               </li>
             </ul>
           </fieldset>
-          <label for="price">Стоимость в сутки (Р):</label>
-          <p class="price-range">от 0</p>
-          <p class="price-range">до 3000</p>
-          <input type="range" id="price" step="1" min="0" max="3000">
-          <button type="submit" class="filter-button">Показать</button>
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+            <label for="price-from">От</label>
+            <input type="text" name="price-from" id="price-from" value="0" pattern="^[ 0-9]+$">
+            <label for="price-to">До</label>
+            <input type="text" name="price-to" id="price-to" value="3000" pattern="^[ 0-9]+$">
+            <div class="range"></div>
+            <button type="submit" class="filter-button">Показать</button>
+          </fieldset>
         </form>
-        
-        <!-- Здесь будет сортировка -->
-
+        <div class="sort">
+          <p class="found">Найдено: 3</p>
+          <p>Сортировка:</p>
+            <ul>
+              <li><a class="sort-type" href="#">По цене</a></li>
+              <li><a class="sort-type" href="#">По типу</a></li>
+              <li><a class="sort-type" href="#">По рейтингу</a></li>
+              <li><a class="sort-price" href="#">Цена по возрастанию</a></li>
+              <li><a class="sort-price" href="#">Цена по убыванию</a></li>
+            </ul>
+        </div>
       </section>
       <section class="hotel-catalog">
         <h3 class="visually-hidden">Список гостиниц</h3>
@@ -153,7 +164,7 @@
           </li>
         </ul>
       </section>
-  </main>
+    </main>
     <footer class="main-footer">
       <span class="hashtag">#VisitSedona</span>
       <section class="footer-social">
