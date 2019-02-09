@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.site-navigation{
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.main-info {
+  text-align: center;
+}
+
+.main-info p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.main-info .description {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.five-reasons,
+.feature {
+  list-style: none;
+  text-align: center;
+  line-height: 21px;
+}
