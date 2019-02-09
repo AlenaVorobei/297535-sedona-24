@@ -31,8 +31,15 @@ a {
   color: #000000;
 }
 
+.intro {
+  background-color: #81b3d2;
+  background-image: url(../img/index-background.jpg);
+  background-repeat: no-repeat;
+}
+
 .main-info {
   text-align: center;
+  background-color: white
 }
 
 .main-info p {
@@ -51,4 +58,147 @@ a {
   list-style: none;
   text-align: center;
   line-height: 21px;
+}
+
+.features h3 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.features p,
+.features span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.reason-main {
+  background-color: #81b3d2;
+  color: white;
+}
+
+.reason-minor p,
+.reason-minor span,
+.feature-description {
+  color: #333333;
+}
+
+.reason-minor {
+  background-color: #eeeeee;
+}
+
+.features-minor {
+  background-color: white;
+}
+
+.booking{
+  background-color: white;
+  text-align: center;
+}
+
+.booking h2 {
+  line-height: 36px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.booking p {
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #766357;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #604e43;
+}
+
+.button:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.booking-form input {
+  font: inherit;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.booking-form input:hover  {
+  background-color: #ebebeb;
+}
+
+.booking-form input:focus {
+  background-color: white;
+  border: 2px solid #e5e5e5;
+}
+
+.main-footer {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.filter form {
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  background-image: url(../img/filter-background.jpg);
+  background-repeat: no-repeat;
+}
+
+.filter-option,
+.sort,
+.hotel-list  {
+  list-style: none;
+}
+
+.hotel-list li  {
+  background-color: white;
+}
+
+.button-info {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  background-color: #81b3d2;
+  color: white;
+}
+
+.button-info:hover
+.button-info:focus {
+  background-color: #669ec0;
+}
+
+.button-info:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-book {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  background-color: #766357;
+  color: white;
+}
+
+.button-book:hover
+.button-book:focus {
+  background-color: #604e43;
+}
+
+.button-book:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
 }
