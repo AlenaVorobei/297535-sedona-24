@@ -315,22 +315,31 @@ a {
   width: 1200px;
   background-color: white;
   flex-direction: row;
-  align-items: flex-start;
+  justify-content: space-between;
   font-size: 12px;
   line-height: 18px;
+  border-bottom: 1px solid #f2f2f2;
+  margin-bottom:  35px;
+  align-items: baseline;
 }
 
 .sort-wrapper {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  justify-content: space-between;
+  width: 240px;
+  padding-left: 73px;
+  align-items: baseline;
 }
 
 .sort-type {
   display: flex;
   flex-direction: row;
-  align-items: space-between; 
+  justify-content: space-between;
+  width: 887px;
+  align-items: baseline;
 }
+
 
 .found {
   font-size: 21px;
