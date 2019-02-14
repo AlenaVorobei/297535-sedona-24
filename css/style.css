@@ -314,24 +314,27 @@ a {
   display: flex;
   width: 1200px;
   background-color: white;
-  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
   font-size: 12px;
   line-height: 18px;
 }
 
 .sort-wrapper {
-  width: 313px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.sort-type {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between; 
 }
 
 .found {
   font-size: 21px;
   line-height: 26px;
-}
-
-.sort-type {
-  display: flex;
-  justify-content:flex-start;
-  width: 887px;
 }
 
 .filter-option,
