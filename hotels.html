@@ -7,19 +7,17 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="main-wrapper">
     <header class="main-header">
       <nav class="main-navigation">
-        <h1 class="visually-hidden">
+        <h1 class="visually-hidden">Город Седона</h1>
           <a class="header-logo" href="index.html">
-            Город Седона
             <img src="img/index-logo.svg" width="140" height="72" alt="Логотип города Седона">
           </a>
-        </h1>
         <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="gallery.html">Фото и видео</a></li>
-          <li><a href="state-map.html">Карта штата</a></li>
+          <li class="navigation-item"><a href="info.html">Информация</a></li>
+          <li class="navigation-item"><a href="gallery.html">Фото и видео</a></li>
+          <li class="navigation-item"><a href="state-map.html">Карта штата</a></li>
           <li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
@@ -73,15 +71,17 @@
           </fieldset>
         </form>
         <div class="sort">
-          <p class="found">Найдено: 3</p>
-          <p>Сортировка:</p>
-            <ul class="sort">
-              <li><a class="sort-type" href="#">По цене</a></li>
-              <li><a class="sort-type" href="#">По типу</a></li>
-              <li><a class="sort-type" href="#">По рейтингу</a></li>
-              <li><a class="sort-price" href="#">Цена по возрастанию</a></li>
-              <li><a class="sort-price" href="#">Цена по убыванию</a></li>
-            </ul>
+          <div class="sort-wrapper">
+            <p class="found">Найдено: 3</p>
+            <p>Сортировка:</p>
+          </div>
+          <ul class="sort-type">
+            <li><a class="sort-by" href="#">По цене</a></li>
+            <li><a class="sort-by" href="#">По типу</a></li>
+            <li><a class="sort-by" href="#">По рейтингу</a></li>
+            <li><a class="sort-by" href="#">Цена по возрастанию</a></li>
+            <li><a class="sort-by" href="#">Цена по убыванию</a></li>
+          </ul>
         </div>
       </section>
       <section class="hotel-catalog">
@@ -168,7 +168,7 @@
         </ul>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="footer main-footer">
       <span class="hashtag">#VisitSedona</span>
       <section class="footer-social">
         <a class="social-button" href="#">Седона в Твиттер</a>

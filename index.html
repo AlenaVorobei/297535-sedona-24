@@ -7,26 +7,25 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="main-wrapper">
     <header class="main-header">
       <nav class="main-navigation">
-        <h1 class="visually-hidden">
+        <h1 class="visually-hidden">Город Седона</h1>
           <a class="header-logo" href="index.html">
-            Город Седона
             <img src="img/index-logo.svg" width="140" height="72" alt="Логотип города Седона">
           </a>
-        </h1>
         <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="gallery.html">Фото и видео</a></li>
-          <li><a href="state-map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li class="navigation-item"><a href="info.html">Информация</a></li>
+          <li class="navigation-item"><a href="gallery.html">Фото и видео</a></li>
+          <li class="navigation-item"><a href="state-map.html">Карта штата</a></li>
+          <li class="navigation-item"><a href="hotels.html">Гостиницы</a></li>
         </ul>
        </nav>
     </header>
     <main class="container">
       <section class="intro">
-        <img src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
+        <img class="intro-title" src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
+        <img class="polygon" src="img/polygon.svg" width="1200" height="57">
       </section>
       <section class="main-info">
         <p class="description">Седона - небольшой городок в аризоне, заслуживающий большего</p>
@@ -35,10 +34,12 @@
       <section class="features">
         <ul class="five-reasons">
           <li class="reason-main">
-            <h3 class="reason-title">Настоящий городок</h3>
-            <span class="reason-number">&#8212; №1 	&#8212;</span>
-            <p class="reason-description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
-            <img src="img/town.jpg" width="800" height="256" alt="Вид на город">
+            <div  class="reason">
+              <h3 class="reason-title">Настоящий городок</h3>
+              <span class="reason-number">&#8212; №1 	&#8212;</span>
+              <p class="reason-description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <img class="town" src="img/town.jpg" width="800" height="256" alt="Вид на город">
           </li>
           <li class="reason-main">
             <h3 class="reason-title">Там есть Мост дьявола</h3>
@@ -61,33 +62,36 @@
             <span class="reason-number">&#8212; №5 &#8212;</span>
             <p class="reason-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-        </ul>
-        <div class="features-minor">
-          <ul>
-            <li class="feature">
-              <h3 class="feature-headline">Жильё</h3>
-              <p class="feature-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-            </li>
-            <li class="feature">
-              <h3 class="feature-headline">Еда</h3>
-              <p class="feature-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </li>
-            <li class="feature">
-              <h3 class="feature-headline">Сувениры</h3>
-              <p class="feature-description">Не только китайского, но и местного производства!</p>
-            </li>
-          </ul>
-        </div>
+          <li class="features-minor">
+            <ul class="feature">
+              <li>
+                <h3 class="feature-headline">Жильё</h3>
+                <p class="feature-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li>
+                <h3 class="feature-headline">Еда</h3>
+                <p class="feature-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li>
+                <h3 class="feature-headline">Сувениры</h3>
+                <p class="feature-description">Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
+          </li>
       </section>
       <section class="booking">
-        <h2>Заинтересовались?</h2>
-        <p class="booking-info">Укажите предполагаемые даты поездки и мы покажем
-         вам лучшие предложения гостиниц в Седоне</p>
-        <span class="button">Поиск гостиницы в Седоне</span>
+        <div class="bookin-main-info">
+          <div class="booking-wrapper">
+            <h2>Заинтересовались?</h2>
+            <p class="booking-info">Укажите предполагаемые даты поездки и мы покажем
+            вам лучшие предложения гостиниц в Седоне</p>
+          </div>
+          <span class="button">Поиск гостиницы в Седоне</span>
+        </div>
         <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
           <label for="chek-in-date">Дата заезда</label>
           <input type="text" name="chek-in-date" id="chek-in-date" value="24 апреля 2017" required>
-          <label for="chek-out-date">Дата заезда</label>
+          <label for="chek-out-date">Дата выезда</label>
           <input type="text" name="chek-out-date" id="chek-out-date" value="4 июля 2017" required>
           <div class="half-width">
             <label for="adults-number">Взрослые</label>
@@ -107,7 +111,7 @@
         <img src="img/map.jpg"  width="1200" height="594" alt="Карта штата Колорадо">
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="footer main-footer">
       <span class="hashtag">#VisitSedona</span>
       <section class="footer-social">
         <a class="social-button" href="#">Седона в Твиттер</a>

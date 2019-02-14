@@ -8,6 +8,13 @@ body {
   color: #000000;
   text-transform: uppercase;
 
+
+}
+
+.main-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1280px;
   background-color: #f2f2f2;
 }
 
@@ -15,29 +22,103 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position:absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.main-header {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.header-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -70px;
+}
+
 .main-navigation {
+  display: block;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 14px;
   line-height: 26px;
   color: #000000;
-
   background-color: #ffffff;
 }
 
 .site-navigation{
+  display: flex;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
   list-style: none;
+}
+
+.navigation-item {
+  box-sizing: border-box;
+  width: 239px;
+  text-align: center;
+  margin: 0px;
+}
+
+.site-navigation-current {
+  box-sizing: border-box;
+  width: 239px;
+  text-align: center;
+  margin: 0px;
+  color: #766357;
 }
 
 .site-navigation a {
   color: #000000;
 }
 
+.site-navigation li:nth-child(2) {
+  margin: 0px 244px 0px 0px;
+}
+
+
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 .intro {
   background-color: #81b3d2;
   background-image: url(../img/index-background.jpg);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size:  1200px 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro-title {
+  margin-top: 76px;
+  margin-bottom: 21px;
 }
 
 .main-info {
+  width: 1200px;
+  padding: 50px 0;
   text-align: center;
   background-color: white
 }
@@ -51,6 +132,29 @@ a {
 .main-info .description {
   font-size: 21px;
   font-weight: 700;
+}
+
+.features {
+  display: block;
+  margin: auto;
+  padding: auto;
+  width: 1200px;
+}
+
+.five-reasons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.feature {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  width: 1200px;
 }
 
 .five-reasons,
@@ -90,12 +194,23 @@ a {
   background-color: white;
 }
 
-.booking{
+.bookin-main-info {
   background-color: white;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 292px;
+}
+
+.booking-wrapper {
+  width: 434px;
+  margin: auto;
+  padding: auto;
 }
 
 .booking h2 {
+  margin-top: 54px;
   line-height: 36px;
   font-size: 30px;
   font-weight: 700;
@@ -108,7 +223,11 @@ a {
 }
 
 .button {
-  font: inherit;
+  height: 86px;
+  width: 568px;
+  line-height: 26px;
+  font-size: 21px;
+  font-weight: 700;
 
   text-align: center;
   color: #ffffff;
@@ -117,6 +236,9 @@ a {
 
   background-color: #766357;
   border: none;
+
+  margin: auto;
+  padding: auto;
 }
 
 .button:hover,
@@ -127,6 +249,15 @@ a {
 .button:active {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.booking form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 568px;
+  margin: auto;
+  padding: auto;
 }
 
 .booking-form input {
@@ -144,9 +275,26 @@ a {
   border: 2px solid #e5e5e5;
 }
 
+.map {
+
+}
+
 .main-footer {
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.9);
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer {
+  display: flex;
+  width: 1200px;
+  padding: 37px 0;
+  justify-content: space-between;
+}
+
+.filter {
+
 }
 
 .filter form {
@@ -155,15 +303,57 @@ a {
   color: white;
   background-image: url(../img/filter-background.jpg);
   background-repeat: no-repeat;
+  width: 1200px;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.sort {
+  display: flex;
+  width: 1200px;
+  background-color: white;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-wrapper {
+  width: 313px;
+}
+
+.found {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.sort-type {
+  display: flex;
+  justify-content:flex-start;
+  width: 887px;
 }
 
 .filter-option,
 .sort,
+.sort-type,
 .hotel-list  {
   list-style: none;
 }
 
+
+
+.hotel-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
 .hotel-list li  {
+  width: 1200px;
   background-color: white;
 }
 
