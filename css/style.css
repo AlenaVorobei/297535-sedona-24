@@ -19,7 +19,7 @@ body {
 .main-wrapper {
   margin-left: auto;
   margin-right: auto;
-  width: 1280px;
+  width: 1200px;
 }
 
 a {
@@ -35,14 +35,13 @@ a {
   padding: 0;
 }
 
-.visually-hidden h1 {
+h1 {
   margin: 0;
 }
 
 .main-header {
   margin-left: auto;
   margin-right: auto;
-  position: relative;
   padding: 0;
 }
 
@@ -106,7 +105,6 @@ a {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
 }
 
 
@@ -115,30 +113,30 @@ a {
   background-image: url(../img/index-background.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size:  1200px 800px;
+  background-size:  1200px 511px;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+}
+
+
+.intro-title img {
+  margin-top: 78px;
+  margin-bottom: 80px;
 }
 
 .intro-title::after {
   content: "";
   position: absolute;
-  top: 506px;
-  bottom: 0;
   background-image: url(../img/polygon.svg);
   background-repeat: no-repeat;
-  background-color: transparent;
-  width: 100%;
-  height: 57px;
   left: 50%;
   margin-left: -600px;
-}
+  height: 59px;
+  width: 100%;
+  top: 476px;
 
-.intro-title img {
-  margin-top: 76px;
-  margin-bottom: 21px;
+
 }
 
 .main-info {
@@ -239,7 +237,7 @@ a {
 
 
 .booking {
-  position: relative;
+
 }
 
 .booking-main-info {
@@ -330,37 +328,21 @@ a {
 }
 
 .map {
-
-
 }
 
-footer .main-footer {
+.footer  {
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(255, 255, 255, 0.3);
-}
-
-
-footer .index-footer {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -120px;
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-/*
-.main-footer .container,
-.index-footer .container {
-  margin-left: auto;
-  margin-right: auto;
-  background-color: rgba(255, 255, 255, 0.3);
-}
-*/
-
-footer .container{
+  position: relative;
   display: flex;
   padding: 37px 0;
   justify-content: space-around;
+  z-index: 10;
+}
+
+.index-footer {
+  margin-top: -130px;
 }
 
 .filter {
