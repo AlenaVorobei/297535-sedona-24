@@ -2,6 +2,13 @@ html{
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "PTSans";
+  src: url(../fonts/ptsans.woff);
+  font-weight: normal;
+  font-size: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -87,7 +94,7 @@ h1 {
 }
 
 .site-navigation li:nth-child(2) {
-  margin-right: 240px;
+  margin-right: 210px;
   text-align: left;
 }
 
@@ -205,8 +212,6 @@ h1 {
 }
 
 .reason {
-  margin-top: 44px;
-  margin-bottom: 65px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -214,6 +219,8 @@ h1 {
   width: 400px;
   padding-left: 50px;
   padding-right: 50px;
+  padding-top: 44px;
+  padding-bottom: 65px;
 }
 
 .reason p {
@@ -226,17 +233,18 @@ h1 {
 
 .reason-minor-wrapper {
   display: flex;
-  justify-content: space-between;
   background-color: #eeeeee;
-  padding-left: 73px;
+  justify-content: space-between;
+  padding-left: 75px;
   padding-right: 77px;
-  padding-top: 50px;
-  padding-bottom: 55px;
+  padding-top: 45px;
+  padding-bottom: 62px;
   }
 
 .reason-minor {
-  width: 240px;
+  width: 260px;
 }
+
 
 .reason-minor h3 {
   margin-bottom: 22px;
@@ -245,9 +253,15 @@ h1 {
   margin-right: auto;
 }
 
-.reason-title {
-  margin-bottom: 22px;
+.reason-minor p {
+  margin-top: 27px;
+  margin-bottom: 0px;
 }
+
+.reason-title {
+  margin-bottom: 20px;
+}
+
 
 .reason-main,
 .reason-main-town {
@@ -283,17 +297,19 @@ h1 {
   display: flex;
   justify-content: space-around;
   list-style: none;
+  margin: 0;
   padding: 0;
 }
+
 
 .feature h3 {
   margin-bottom: 25px;
 }
 
 .feature li {
-  padding-top: 148px;
-  padding-bottom: 55px;
-  width: 335px;
+  padding-top: 160px;
+  padding-bottom: 70px;
+  width: 400px;
 }
 
 .feature-headline-house {
@@ -448,8 +464,26 @@ h1 {
 }
 
 .half-width input {
-  width: 114px;
+  width: 26px;
+  padding: 5px 1px;
   text-align: center;
+}
+
+.adults,
+.kids {
+  display: flex;
+  width: 108px;
+}
+
+.button-grey {
+  width: 38px;
+  font-weight: 400;
+  font-size: 14px;
+  vertical-align: middle;
+  text-align: center;
+  background: #f2f2f2;
+  border: none;
+  outline: none;
 }
 
 .booking-form input {
@@ -460,6 +494,7 @@ h1 {
   padding-top: 6px;
   padding-bottom: 6px;
   text-transform: uppercase;
+  height: 26px;
 
 }
 
@@ -490,6 +525,7 @@ h1 {
 .booking-form input:focus {
   background-color: white;
   border: 2px solid #e5e5e5;
+  height: 24px;
 }
 
 .button-submit {
@@ -524,8 +560,8 @@ h1 {
   background-color: rgba(255, 255, 255, 0.9);
   position: relative;
   display: flex;
-  padding: 40px 0;
-  justify-content: space-between;
+  padding-bottom: 50px;
+  padding-top: 38px;
   align-items: center;
 }
 
@@ -533,16 +569,16 @@ h1 {
   line-height: 26px;
   font-size: 21px;
   font-weight: 700;
-  padding-left: 135px;
+  padding-left: 132px;
 }
 
 .footer-social {
   display: flex;
-  width: 150px;
+  width: 155px;
   justify-content: space-between;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 256px;
+  margin-right: 220px;
 
 }
 
@@ -553,6 +589,7 @@ h1 {
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
+  margin-right: 6px;
 }
 
 .social-button:hover,
@@ -569,7 +606,6 @@ h1 {
 .footer-copyright {
   display: flex;
   align-items: center;
-  justify-content: center;
   padding-right: 101px;
 }
 
