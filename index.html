@@ -92,33 +92,37 @@
           <div class="booking-main-info">
             <div class="booking-wrapper">
               <h2>Заинтересовались?</h2>
-              <p class="booking-info">Укажите предполагаемые даты поездки и мы покажем
+              <p class="booking-info">Укажите предполагаемые даты поездки, и мы покажем
               вам лучшие предложения гостиниц в Седоне</p>
             </div>
             <span class="button">Поиск гостиницы в Седоне</span>
           </div>
           <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="date">
-              <label for="chek-in-date">Дата заезда</label>
+              <label for="chek-in-date">Дата заезда:</label>
               <input type="text" name="chek-in-date" id="chek-in-date" value="24 апреля 2017" required>
             </div>
             <div class="date">
-              <label for="chek-out-date">Дата выезда</label>
+              <label for="chek-out-date">Дата выезда:</label>
               <input type="text" name="chek-out-date" id="chek-out-date" value="4 июля 2017" required>
             </div>
             <div class="half-width">
-              <label for="adults-number">Взрослые</label>
-                <div class="adults">
-                  <button class="button-grey minus" type="button"></button>
+              <div class="adults">
+                <label for="adults-number">Взрослые:</label>
+                <div class="button-number">
+                  <button class="button-grey" type="button"><div class="minus">-</div></button>
                   <input type="text" name="adults-number" id="adults-number" min="1" step="1" value="2">
-                  <button class="button-grey plus" type="button"><span class="plus"></span></button>
+                  <button class="button-grey" type="button"><div class="plus">+</div></button>
                 </div>
-              <label for="kids-number">Дети</label>
-                <div class="kids">
-                  <button class="button-grey minus" type="button"></button>
+              </div>
+              <div class="kids">
+                <label for="kids-number">Дети:</label>
+                <div class="button-number">
+                  <button class="button-grey" type="button"><div class="minus">-</div></button>
                   <input type="text" name="kids-number" id="kids-number" min="0" step="1" value="0">
-                  <button class="button-grey plus" type="button"><span class="plus"></span></button>
+                  <button class="button-grey" type="button"><div class="plus">+</div></button>
                 </div>
+              </div>
             </div>
             <button class="button-submit" type="submit">
               Найти
