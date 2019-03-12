@@ -711,13 +711,11 @@ h1 {
   width: 1060px;
 }
 
-.filter input[type="checkbox"] {
+/*.filter input[type="checkbox"] {
   display: none;
-}
+}*/
 
 .filter-option {
-  position: relative;
-  cursor: default;
   font-weight: 400;
   line-height: 21px;
   font-size: 14px;
@@ -725,16 +723,55 @@ h1 {
   padding-left: 30px;
 }
 
-.filter-option::before {
+/*.filter-option::before {
   content: "";
   position: absolute;
-  background-image: url(../img/checkbox-on.png);
+  background-image: url(../img/checkbox-off.png);
   background-repeat: no-repeat;
-  left: -2px;
+  left: 1px;
   width: 27px;
   height: 23px;
 }
 
+.filter-option-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/checkbox-on.png);
+  background-repeat: no-repeat;
+  left: 1px;
+  width: 27px;
+  height: 23px;
+}*/
+
+.option-name {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+.filter-option-checkbox + label::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/checkbox-off.png);
+  background-repeat: no-repeat;
+  left: 1px;
+  width: 27px;
+  height: 23px;
+  background-position: 0 0;
+}
+
+.filter-option-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/checkbox-on.png);
+  background-repeat: no-repeat;
+  left: 1px;
+  width: 27px;
+  height: 23px;
+  background-position: 0 0;
+}
 
 .filter fieldset {
   border: none;
