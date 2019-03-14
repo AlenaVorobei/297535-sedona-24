@@ -688,7 +688,7 @@ h1 {
 
 .footer-copyright img {
   padding-top: 3px;
-  padding-left: 4px;
+  padding-left: 10px;
 }
 
 .index-footer {
@@ -704,74 +704,68 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
-  padding: 0 70px;
+  padding: 0 73px;
   padding-top: 27px;
-  padding-bottom: 7px;
+  padding-bottom: 14px;
   margin: 0;
-  width: 1060px;
 }
 
-/*.filter input[type="checkbox"] {
+.infrastructure,
+.hotel-category {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter input[type="checkbox"] {
   display: none;
-}*/
+}
 
 .filter-option {
   font-weight: 400;
   line-height: 21px;
   font-size: 14px;
   vertical-align: middle;
-  padding-left: 30px;
 }
 
-/*.filter-option::before {
-  content: "";
-  position: absolute;
-  background-image: url(../img/checkbox-off.png);
-  background-repeat: no-repeat;
-  left: 1px;
-  width: 27px;
-  height: 23px;
+.checkbox-custom,
+.label {
+	display: inline-block;
+	vertical-align: middle;
 }
 
-.filter-option-checkbox:checked + label::after {
-  content: "";
-  position: absolute;
-  background-image: url(../img/checkbox-on.png);
-  background-repeat: no-repeat;
-  left: 1px;
-  width: 27px;
-  height: 23px;
-}*/
 
+.checkbox-custom,
 .option-name {
-  position: relative;
-  display: block;
+	display: inline-block;
+	vertical-align: middle;
   cursor: pointer;
   user-select: none;
 }
 
-
-.filter-option-checkbox + label::before {
+.checkbox-custom  {
   content: "";
-  position: absolute;
+  position: relative;
   background-image: url(../img/checkbox-off.png);
   background-repeat: no-repeat;
-  left: 1px;
-  width: 27px;
+  padding-right: 13px;
+  width: 23px;
   height: 23px;
-  background-position: 0 0;
+  top: 0;
+  left: 0px;
 }
 
-.filter-option-checkbox:checked + label::after {
+.checkbox:checked + .checkbox-custom::before {
   content: "";
   position: absolute;
   background-image: url(../img/checkbox-on.png);
   background-repeat: no-repeat;
-  left: 1px;
   width: 27px;
   height: 23px;
-  background-position: 0 0;
+  top: 0;
+  left: 0;
 }
+
 
 .filter fieldset {
   border: none;
@@ -780,49 +774,56 @@ h1 {
   margin: 0;
 }
 
+.filter fieldset:nth-child(3) {
+  margin-left: auto;
+}
+
 .filter legend {
   font-weight: 700;
   line-height: 21px;
   font-size: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
+}
+
+.infrastructure,
+.hotel-category {
+  display: flex;
+  flex-direction: column;
 }
 
 
 .infrastructure li,
 .hotel-category li {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   line-height: 26px;
   font-size: 14px;
   font-weight: 400;
 }
 
 .filter-range {
-  width: 330px;
+  width: 320px;
   color: #ffffff;
   text-transform: uppercase;
-  padding-left: 222px;
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
+  margin-bottom: 10px;
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
 }
 
 .price-controls {
-  height: 36px;
+  height: 34px;
   margin-bottom: 20px;
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
 
-.price-controls {
-  height: 36px;
-  margin-bottom: 20px;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
+.price-controls label{
+  padding-top: 28px;
 }
+
 
 .price-controls::after {
   content: "";
@@ -837,9 +838,10 @@ h1 {
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
-  padding-left: 65px;
+  padding-left: 70px;
 }
+
+
 
 .price-controls input {
   position: relative;
@@ -894,7 +896,7 @@ h1 {
 
 .filter-submit {
   display: block;
-  margin: 0 auto;
+  margin: 0 85px;
   padding: 6px 35px;
   font-size: 14px;
   line-height: 20px;
@@ -911,12 +913,6 @@ h1 {
   background: #ffffff;
 }
 
-.infrastructure,
-.hotel-category {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 
 .sort {
   display: flex;
@@ -927,7 +923,7 @@ h1 {
   line-height: 18px;
   border-bottom: 1px solid #f2f2f2;
   padding-bottom: 31px;
-  padding-top: 31px;
+  padding-top: 29px;
 }
 
 .sort p {
@@ -969,7 +965,7 @@ h1 {
 
 .sort ul {
   list-style: none;
-  padding-left: 47px;
+  padding-left: 49px;
 }
 
 .sort-wrapper {
@@ -1036,7 +1032,7 @@ h1 {
 .hotel {
   display: flex;
   padding-top: 24px;
-  padding-left: 70px;
+  padding-left: 73px;
   padding-bottom: 22px;
   border-bottom: 1px solid #f2f2f2;
 }
@@ -1127,23 +1123,29 @@ h1 {
   text-align: right;
   margin-left: auto;
   justify-content: space-between;
-  padding-right: 75px;
+  padding-right: 73px;
   padding-top: 6px;
+  padding-bottom: 7px;
+
 }
 
 .rate p {
   margin: 0;
+  padding-right: 13px;
+  padding-left: 13px;
 }
 
 .rate {
-  padding-top: 2px;
-  padding-bottom: 4px;
   color: #666666;
   background-color: #f2f2f2;
   text-align: center;
-  width: 112px;
 }
 
 .stars-rate {
   padding-bottom: 22px;
+}
+
+.star {
+  width: 18px;
+  height: 17px;
 }
