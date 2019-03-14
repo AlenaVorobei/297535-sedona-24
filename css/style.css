@@ -766,6 +766,29 @@ h1 {
   left: 0;
 }
 
+.checkbox-custom:disabled  {
+  content: "";
+  position: relative;
+  background-image: url(../img/checkbox-on-3.png);
+  background-repeat: no-repeat;
+  padding-right: 13px;
+  width: 23px;
+  height: 23px;
+  top: 0;
+  left: 0px;
+}
+
+.checkbox:checked + .checkbox-custom::before:disabled {
+  content: "";
+  position: absolute;
+  background-image: url(../img/checkbox-on-2.png);
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 23px;
+  top: 0;
+  left: 0;
+}
+
 
 .filter fieldset {
   border: none;
