@@ -117,6 +117,15 @@ h1 {
   color: #000000;
 }
 
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color:#81b3d2;
+}
+
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .navigation-item-current a {
   color: #766357;
 }
@@ -163,7 +172,7 @@ h1 {
   align-items: center;
   margin: 0 auto;
   padding-top: 58px;
-  padding-bottom: 51px;
+  padding-bottom: 49px;
 }
 
 .main-info p {
@@ -286,7 +295,7 @@ h1 {
 }
 
 .reason-minor p {
-  margin-top: 24px;
+  margin-top: 22px;
   margin-bottom: 0px;
 }
 
@@ -349,7 +358,7 @@ h1 {
 
 .feature li {
   padding-top: 160px;
-  padding-bottom: 82px;
+  padding-bottom: 80px;
   width: 400px;
 }
 
@@ -433,7 +442,7 @@ h1 {
 
 .booking h2 {
   margin: 0;
-  padding-bottom: 23px;
+  padding-bottom: 24px;
   line-height: 36px;
   font-size: 30px;
   font-weight: 700;
@@ -558,6 +567,18 @@ h1 {
   vertical-align: middle;
 }
 
+.minus:hover,
+.minus:focus,
+.plus:hover,
+.plus:focus {
+  color: #000000;
+}
+
+.minus:active,
+.plus:active {
+  color: #81b3d2;
+}
+
 .booking-form input {
   font: inherit;
   background-color: #f2f2f2;
@@ -632,7 +653,7 @@ h1 {
   position: relative;
   display: flex;
   padding-bottom: 50px;
-  padding-top: 33px;
+  padding-top: 36px;
   padding-right: 100px;
   padding-left: 134px;
   align-items: center;
@@ -671,9 +692,11 @@ h1 {
 
 .social-button:active {
   background-color: #5496bd;
-  fill-opacity: 0,3;
 }
 
+.social-button svg:active{
+    fill-opacity: 0.3;
+}
 
 .footer-copyright {
   display: flex;
@@ -690,9 +713,24 @@ h1 {
   text-align: center;
 }
 
-.footer-copyright img {
+/*.footer-copyright img {
   padding-top: 3px;
   padding-left: 10px;
+}*/
+
+.academy-logo {
+  width: 115px;
+  height: 41px;
+  margin-left: 8px;
+  background: url(../img/logo-name.png) no-repeat;
+}
+
+.academy-logo:hover {
+  background: url(../img/logo-name-2.png) no-repeat;
+}
+
+.academy-logo:active {
+  background: url(../img/logo-name-3.png) no-repeat;
 }
 
 .index-footer {
@@ -710,7 +748,7 @@ h1 {
   display: flex;
   padding: 0 72px;
   padding-top: 27px;
-  padding-bottom: 12px;
+  padding-bottom: 8px;
   margin: 0;
 }
 
@@ -1019,6 +1057,10 @@ h1 {
   padding-left: 49px;
 }
 
+.sort li:nth-child(2) {
+  padding-left: 10px;
+}
+
 .sort-wrapper {
   display: flex;
   padding-left: 70px;
@@ -1108,6 +1150,15 @@ h1 {
   color: black;
 }
 
+.hotel-info h4 a:hover,
+.hotel-info h4 a:focus {
+  color: #81b3d2;
+}
+
+.hotel-info h4 a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .hotel-info h4 {
   margin: 0;
   text-transform: uppercase;
@@ -1155,7 +1206,7 @@ h1 {
   background-color: #81b3d2;
 }
 
-.button-info:hover
+.button-info:hover,
 .button-info:focus {
   background-color: #669ec0;
 }
@@ -1169,7 +1220,7 @@ h1 {
   background-color: #766357;
 }
 
-.button-book:hover
+.button-book:hover,
 .button-book:focus {
   background-color: #604e43;
 }
