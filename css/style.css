@@ -59,6 +59,9 @@ h1 {
   margin: 0;
 }
 
+.main-header {
+  position: relative;
+}
 
 .header-logo {
   position: absolute;
@@ -423,6 +426,7 @@ h1 {
 
 .booking {
   background-color: white;
+  position: relative;
 }
 
 .booking-main-info {
@@ -503,7 +507,7 @@ h1 {
 .date {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 32px;
+  padding-bottom: 30px;
   align-items: center;
   width: 459px;
 }
@@ -526,7 +530,6 @@ h1 {
 .kids {
   display: flex;
   justify-content:space-between;
-/*  width: 230px;*/
   align-items: center;
 }
 
@@ -544,6 +547,7 @@ h1 {
 
 .button-grey {
   width: 38px;
+  height:38px;
   vertical-align: middle;
   text-align: center;
   background: #f2f2f2;
@@ -556,6 +560,38 @@ h1 {
   display: flex;
   width: 115px;
 }
+
+
+.booking-form input {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: #f2f2f2;
+  border: none;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-transform: uppercase;
+  height: 38px;
+  box-sizing: border-box;
+}
+
+.booking-form input:hover  {
+  background-color: #ebebeb;
+}
+
+.booking-form input:focus {
+  background-color: white;
+  border: 2px solid #e5e5e5;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.button-grey:hover,
+.button-grey:focus {
+  background-color: #ebebeb;
+}
+
+
 
 .minus,
 .plus {
@@ -579,57 +615,37 @@ h1 {
   color: #81b3d2;
 }
 
-.booking-form input {
-  font: inherit;
-  background-color: #f2f2f2;
-  border: none;
-
-  padding-top: 6px;
-  padding-bottom: 6px;
-  text-transform: uppercase;
-  height: 26px;
-
-}
-
 .date input {
-  width: 336px;
+  width: 347px;
   padding-left: 10px;
   background-image: url(../img/calendar.png);
   background-repeat: no-repeat;
   background-position: center right 8px;
   margin-left: auto;
-  height: 24px;
-}
-
-.booking-form input:hover  {
-  background-color: #ebebeb;
-  height: 24px;
+  height: 38px;
 }
 
 .date input:hover {
   background-image: url(../img/calendarblack.png);
   background-repeat: no-repeat;
   background-position: center right 8px;
-  height: 24px;
 }
 
 .date input:focus {
   background-image: url(../img/calendarblue.png);
   background-repeat: no-repeat;
-  background-position: center right 8px;
-  height: 24px;
-}
-
-.booking-form input:focus {
-  background-color: white;
-  border: 2px solid #e5e5e5;
-  height: 20px;
+  background-position: center right 6px;
+  height: 38px;
+  width: 347px;
+  padding-left: 8px;
 }
 
 .date input:active {
-  height: 20px;
+  height: 38px;
   background-color: white;
   border: solid 2px #e5e5e5;
+  width: 347px;
+  padding-left: 8px;
 }
 
 .button-submit {
