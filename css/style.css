@@ -94,7 +94,7 @@ h1 {
 }
 
 .site-navigation li:nth-child(2) {
-  margin-right: 88px;
+  margin-right: 86px;
   text-align: left;
 }
 
@@ -273,13 +273,13 @@ h1 {
   background-color: #eeeeee;
   justify-content: space-between;
   padding-left: 69px;
-  padding-right: 69px;
+  padding-right: 73px;
   padding-top: 48px;
   padding-bottom: 58px;
   }
 
 .reason-minor {
-  width: 260px;
+  width: 259px;
 }
 
 .reason-minor:last-child {
@@ -503,7 +503,7 @@ h1 {
 .date {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 30px;
+  padding-bottom: 32px;
   align-items: center;
   width: 459px;
 }
@@ -598,28 +598,38 @@ h1 {
   background-repeat: no-repeat;
   background-position: center right 8px;
   margin-left: auto;
+  height: 24px;
 }
 
 .booking-form input:hover  {
   background-color: #ebebeb;
+  height: 24px;
 }
 
 .date input:hover {
   background-image: url(../img/calendarblack.png);
   background-repeat: no-repeat;
   background-position: center right 8px;
+  height: 24px;
 }
 
 .date input:focus {
   background-image: url(../img/calendarblue.png);
   background-repeat: no-repeat;
   background-position: center right 8px;
+  height: 24px;
 }
 
 .booking-form input:focus {
   background-color: white;
   border: 2px solid #e5e5e5;
-  height: 24px;
+  height: 20px;
+}
+
+.date input:active {
+  height: 20px;
+  background-color: white;
+  border: solid 2px #e5e5e5;
 }
 
 .button-submit {
@@ -653,9 +663,9 @@ h1 {
   position: relative;
   display: flex;
   padding-bottom: 50px;
-  padding-top: 36px;
-  padding-right: 100px;
-  padding-left: 134px;
+  padding-top: 34px;
+  padding-right: 96px;
+  padding-left: 133px;
   align-items: center;
 }
 
@@ -671,7 +681,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   margin-left: 256px;
-  margin-right: 220px;
+  margin-right: 222px;
 
 }
 
@@ -681,6 +691,7 @@ h1 {
   justify-content: center;
   width: 46px;
   height: 48px;
+  margin-top: 2px;
   background-color: #81b3d2;
   margin-right: 6px;
 }
@@ -692,10 +703,7 @@ h1 {
 
 .social-button:active {
   background-color: #5496bd;
-}
-
-.social-button svg:active{
-    fill-opacity: 0.3;
+  fill-opacity: 0.3;
 }
 
 .footer-copyright {
@@ -721,7 +729,7 @@ h1 {
 .academy-logo {
   width: 115px;
   height: 41px;
-  margin-left: 8px;
+  margin-left: 9px;
   background: url(../img/logo-name.png) no-repeat;
 }
 
@@ -748,7 +756,7 @@ h1 {
   display: flex;
   padding: 0 72px;
   padding-top: 27px;
-  padding-bottom: 8px;
+  padding-bottom: 10px;
   margin: 0;
 }
 
@@ -786,15 +794,21 @@ h1 {
 }
 
 .checkbox-custom  {
-  content: "";
   position: relative;
+  padding-right: 14px;
+  width: 23px;
+  height: 23px;
+}
+
+.checkbox-custom::before{
+  content: "";
+  position: absolute;
   background-image: url(../img/checkbox-off.png);
   background-repeat: no-repeat;
-  padding-right: 13px;
   width: 23px;
   height: 23px;
   top: 0;
-  left: 0px;
+  left: 0;
 }
 
 .checkbox:checked + .checkbox-custom::before {
@@ -848,7 +862,7 @@ h1 {
   font-weight: 700;
   line-height: 21px;
   font-size: 16px;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .infrastructure,
@@ -1084,13 +1098,13 @@ h1 {
   border-bottom: none;
 }
 
-.sort-type a:active {
-  color: black;
+.sort-by:active {
+  color: #000000;
   border-bottom: none;
 }
 
-.sort-type a:hover,
-.sort-type a:focus {
+.sort-by:hover,
+.sort-by:focus {
   color: #81b3d2;
   border-bottom: 1px dashed #81b3d2;
 }
@@ -1117,11 +1131,6 @@ h1 {
   padding: 0;
 }
 
-.stars-rate:first-child span:first-child {
-  padding-right: 4px;
-}
-
-
 
 .hotel-list li  {
   background-color: white;
@@ -1141,13 +1150,14 @@ h1 {
 }
 
 .hotel-info {
-  margin-left: 31px;
+  margin-left: 30px;
   display: flex;
   flex-direction: column;
 }
 
 .hotel-info h4 a {
   color: black;
+  padding-left: 1px;
 }
 
 .hotel-info h4 a:hover,
@@ -1173,14 +1183,13 @@ h1 {
   font-size: 14px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
 .half-width-hotel {
   display: flex;
   justify-content:space-between;
   width: 258px;
-
 }
 
 .button-info {
@@ -1237,7 +1246,7 @@ h1 {
   margin-left: auto;
   justify-content: space-between;
   padding-right: 73px;
-  padding-top: 6px;
+  padding-top: 4px;
   padding-bottom: 7px;
 
 }
@@ -1261,4 +1270,9 @@ h1 {
 .star {
   width: 18px;
   height: 17px;
+}
+
+
+.hotel-item:first-child .star:nth-child(2) {
+  padding-right: 4px;
 }
