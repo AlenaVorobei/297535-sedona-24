@@ -665,6 +665,9 @@ input[type="radio"].visually-hidden {
   width: 115px;
 }
 
+.search-form-invisible {
+  display:none
+}
 
 .booking-form input {
   font-size: 14px;
