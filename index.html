@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">-->
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -11,12 +11,10 @@
     <div class="main-wrapper">
       <header class="main-header">
           <nav class="main-navigation">
-            <h1>
-              <a class="header-logo" href="index.html">
-                <img src="img/index-logo.svg" width="140" height="72" alt="Логотип города Седона">
-              </a>
-              <span class="visually-hidden">Город Седона</span>
-            </h1>
+            <h1 class="visually-hidden">Город Седона</h1>
+            <a class="header-logo" href="#">
+              <img src="img/index-logo.svg" width="140" height="72" alt="Логотип города Седона">
+            </a>
             <ul class="site-navigation">
               <li class="navigation-item"><a href="info.html">Информация</a></li>
               <li class="navigation-item"><a href="gallery.html">Фото и видео</a></li>
@@ -27,9 +25,7 @@
       </header>
       <main class="container">
         <section class="intro">
-          <div class="intro-title">
-            <img class="intro-title-img" src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
-          </div>
+          <img class="intro-title" src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону">
         </section>
         <section class="main-info">
           <p class="description">Седона &mdash; небольшой городок в аризоне, заслуживающий большего!</p>
@@ -41,9 +37,9 @@
               <div  class="reason">
                 <h3 class="reason-title">Настоящий городок</h3>
                 <span class="reason-number">&#8212; №1 	&#8212;</span>
-                <p class="reason-description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+                <p class="reason-description">Седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
               </div>
-              <img class="town" src="img/town.jpg" width="800" height="256" alt="Вид на город">
+              <!--<img class="town" src="img/town.jpg" width="800" height="256" alt="Вид на город">-->
             </div>
             <div class="reason-main">
               <div  class="reason">
@@ -51,7 +47,7 @@
                 <span class="reason-number">&#8212; №2 &#8212;</span>
                 <p class="reason-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               </div>
-              <img src="img/devils-bridge.jpg" width="800" height="256" alt="Мост дьявола">
+              <!--<img src="img/devils-bridge.jpg" width="800" height="256" alt="Мост дьявола">-->
             </div>
             <div class="reason-minor-wrapper">
               <div class="reason-minor">
@@ -70,32 +66,28 @@
                 <p class="reason-description">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
             </div>
-            <div class="features-minor">
-              <ul class="feature">
-                <li>
-                  <h3 class="feature-headline-house">Жильё</h3>
-                  <p class="feature-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                </li>
-                <li>
-                  <h3 class="feature-headline-food">Еда</h3>
-                  <p class="feature-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                </li>
-                <li>
-                  <h3 class="feature-headline-present">Сувениры</h3>
-                  <p class="feature-description">Не только китайского, но и местного производства!</p>
-                </li>
-              </ul>
-            </div>
+            <ul class="features-minor feature">
+              <li>
+                <h3 class="feature-headline-house">Жильё</h3>
+                <p class="feature-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li>
+                <h3 class="feature-headline-food">Еда</h3>
+                <p class="feature-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li>
+                <h3 class="feature-headline-present">Сувениры</h3>
+                <p class="feature-description">Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
           </div>
         </section>
         <section class="booking">
           <div class="booking-main-info">
-            <div class="booking-wrapper">
-              <h2>Заинтересовались?</h2>
-              <p class="booking-info">Укажите предполагаемые даты поездки,<br> и мы покажем
-              вам лучшие предложения гостиниц в Седоне</p>
-            </div>
-            <span class="button">Поиск гостиницы в Седоне</span>
+            <h2>Заинтересовались?</h2>
+            <p class="booking-info">Укажите предполагаемые даты поездки,<br> и мы покажем
+            вам лучшие предложения гостиниц в Седоне</p>
+            <a href="#" class="button">Поиск гостиницы в Седоне</a>
           </div>
           <form class="form booking-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="date">
@@ -110,17 +102,17 @@
               <div class="adults">
                 <label for="adults-number">Взрослые:</label>
                 <div class="button-number">
-                  <button class="button-grey" type="button"><span class="minus">-</span></button>
+                  <button class="button-grey minus" type="button" aria-label="Минус">-</button>
                   <input type="text" name="adults-number" id="adults-number" value="2">
-                  <button class="button-grey" type="button"><span class="plus">+</span></button>
+                  <button class="button-grey plus" type="button" aria-label="Плюс">+</button>
                 </div>
               </div>
               <div class="kids">
                 <label for="kids-number">Дети:</label>
                 <div class="button-number">
-                  <button class="button-grey" type="button"><span class="minus">-</span></button>
+                  <button class="button-grey minus" type="button" aria-label="Минус">-</button>
                   <input type="text" name="kids-number" id="kids-number" value="0">
-                  <button class="button-grey" type="button"><span class="plus">+</span></button>
+                  <button class="button-grey plus" type="button" aria-label="Плюс">+</button>
                 </div>
               </div>
             </div>
