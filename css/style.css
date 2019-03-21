@@ -568,7 +568,41 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.booking-form {
+@keyframes bounce {
+  0% {transform: translateY(-2000px);}
+
+  70% {transform: translateY(30px);}
+
+  90% {transform: translateY(-10px);}
+
+  100% {transform: translateY(0);}
+}
+
+@keyframes shake {
+  0%,
+  100% {transform: translateX(0);}
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {transform: translateX(-10px);}
+
+  20%,
+  40%,
+  60%,
+  80% {transform: translateX(10px);}
+}
+
+ .booking-form {
+  display:none
+}
+
+.search-form-error {
+  animation: shake 0.6s;
+}
+
+.search-form-visible {
   background-color: white;
   position: absolute;
   left: 50%;
@@ -586,6 +620,7 @@ input[type="radio"].visually-hidden {
           box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  animation: bounce 0.6s;
 }
 
 .date {
@@ -663,10 +698,6 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   width: 115px;
-}
-
-.search-form-invisible {
-  display:none
 }
 
 .booking-form input {
