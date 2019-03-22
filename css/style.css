@@ -258,17 +258,11 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 400px;
-  padding-left: 52px;
-  padding-right: 848px;
-  padding-top: 48px;
-  padding-bottom: 58px;
+  margin-left: 52px;
+  margin-right: 848px;
+  margin-top: 48px;
+  margin-bottom: 58px;
 }
 
 .reason .reason-title {
@@ -304,10 +298,10 @@ input[type="radio"].visually-hidden {
 }
 
 .reason-main .reason {
-  padding-left: 847px;
-  padding-right: 44px;
-  padding-top: 45px;
-  padding-bottom: 61px;
+  margin-left: 847px;
+  margin-right: 44px;
+  margin-top: 45px;
+  margin-bottom: 61px;
 }
 
 .reason-main p {
@@ -574,30 +568,56 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
 }
 
-@keyframes bounce {
-  0% {transform: translateY(-300px);}
+@-webkit-keyframes bounce {
+  0% {-webkit-transform: translateY(-300px);transform: translateY(-300px);}
 
-  70% {transform: translateY(30px);}
+  70% {-webkit-transform: translateY(30px);transform: translateY(30px);}
 
-  90% {transform: translateY(-10px);}
+  90% {-webkit-transform: translateY(-10px);transform: translateY(-10px);}
 
-  100% {transform: translateY(0);}
+  100% {-webkit-transform: translateY(0);transform: translateY(0);}
 }
 
-@keyframes shake {
+@keyframes bounce {
+  0% {-webkit-transform: translateY(-300px);transform: translateY(-300px);}
+
+  70% {-webkit-transform: translateY(30px);transform: translateY(30px);}
+
+  90% {-webkit-transform: translateY(-10px);transform: translateY(-10px);}
+
+  100% {-webkit-transform: translateY(0);transform: translateY(0);}
+}
+
+@-webkit-keyframes shake {
   0%,
-  100% {transform: translateX(0);}
+  100% {-webkit-transform: translateX(0);transform: translateX(0);}
 
   10%,
   30%,
   50%,
   70%,
-  90% {transform: translateX(-10px);}
+  90% {-webkit-transform: translateX(-10px);transform: translateX(-10px);}
 
   20%,
   40%,
   60%,
-  80% {transform: translateX(10px);}
+  80% {-webkit-transform: translateX(10px);transform: translateX(10px);}
+}
+
+@keyframes shake {
+  0%,
+  100% {-webkit-transform: translateX(0);transform: translateX(0);}
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {-webkit-transform: translateX(-10px);transform: translateX(-10px);}
+
+  20%,
+  40%,
+  60%,
+  80% {-webkit-transform: translateX(10px);transform: translateX(10px);}
 }
 
  .booking-form {
@@ -605,7 +625,8 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .search-form-visible {
@@ -626,7 +647,8 @@ input[type="radio"].visually-hidden {
           box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 
 .date {
@@ -1122,6 +1144,7 @@ input[type="radio"].visually-hidden {
   border-radius: 2px;
 }
 
+
 .price-controls::after {
   content: "";
   position: absolute;
@@ -1153,6 +1176,7 @@ input[type="radio"].visually-hidden {
 .price-controls .max-price {
   width: 83px;
   padding-left: 65px;
+  line-height: inherit;
 }
 
 .price-controls input {
@@ -1445,13 +1469,12 @@ input[type="radio"].visually-hidden {
 .half-width-hotel {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack:justify;
-      -ms-flex-pack:justify;
-          justify-content:space-between;
   width: 258px;
 }
 
+.hotel-category-list {
+  margin-right: 6px;
+}
 
 .button-info,
 .button-book {
