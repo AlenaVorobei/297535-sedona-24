@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <!--<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">-->
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -87,16 +86,18 @@
             <h2>Заинтересовались?</h2>
             <p class="booking-info">Укажите предполагаемые даты поездки,<br> и мы покажем
             вам лучшие предложения гостиниц в Седоне</p>
-            <a class="button">Поиск гостиницы в Седоне</a>
+            <button class="button">Поиск гостиницы в Седоне</button>
           </div>
           <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="date">
               <label for="chek-in-date">Дата заезда:</label>
               <input type="text" class="chek-in-date" name="chek-in-date" id="chek-in-date" value="24 апреля 2017" required>
+              <button class="calendar" type="button" aria-label="Календарь"></button>
             </div>
             <div class="date">
               <label for="chek-out-date">Дата выезда:</label>
               <input type="text" name="chek-out-date" id="chek-out-date" value="4 июля 2017" required>
+              <button class="calendar" type="button" aria-label="Календарь"></button>
             </div>
             <div class="half-width">
               <div class="adults">
