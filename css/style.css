@@ -573,7 +573,7 @@ input[type="radio"].visually-hidden {
 
   70% {-webkit-transform: translateY(30px);transform: translateY(30px);}
 
-  90% {-webkit-transform: translateY(-10px);transform: translateY(-10px);}
+  90% {-webkit-transform: translateY(-20px);transform: translateY(-10px);}
 
   100% {-webkit-transform: translateY(0);transform: translateY(0);}
 }

@@ -1,7 +1,7 @@
 var link = document.querySelector(".button");
 var popup = document.querySelector(".booking-form");
 var checkin = popup.querySelector(".chek-in-date");
-var form = document.querySelector("form");
+/*var form = document.querySelector("form");*/
 var checkout = popup.querySelector("[name=chek-out-date]");
 var adults = popup.querySelector("[name=adults-number]");
 var kids = popup.querySelector("[name=kids-number]");
@@ -31,15 +31,16 @@ link.addEventListener("click", function (evt) {
     }
 });
 
-form.addEventListener("submit", function (evt) {
-    evt.preventDefault();
+popup.addEventListener("submit", function (evt) {
     if (!checkin.value || !checkout.value || !adults.value || !kids.value) {
       evt.preventDefault();
       popup.classList.add("search-form-error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("search-form-error");
        } else {
           if(isStorageSupport) {
-      localStorage.setItem("adults-number", adults.value);
-      localStorage.setItem("kids-number", kids.value)
+      localStorage.setItem("adults", adults.value);
+      localStorage.setItem("kids", kids.value)
     }
   }
   });
