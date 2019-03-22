@@ -624,11 +624,6 @@ input[type="radio"].visually-hidden {
   display:none
 }
 
-.search-form-error {
-  -webkit-animation: shake 0.6s;
-          animation: shake 0.6s;
-}
-
 .search-form-visible {
   background-color: white;
   position: absolute;
@@ -650,6 +645,13 @@ input[type="radio"].visually-hidden {
   -webkit-animation: bounce 0.6s;
           animation: bounce 0.6s;
 }
+
+
+.search-form-error {
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
+}
+
 
 .date {
   display: -webkit-box;
@@ -802,7 +804,7 @@ input[type="radio"].visually-hidden {
 }
 
 .calendar:hover,
-.calendar:focus {
+.calendar:active  {
   background-image: url(../img/calendarblack.png);
   background-repeat: no-repeat;
   background-color: transparent;
@@ -811,7 +813,8 @@ input[type="radio"].visually-hidden {
   height: 22px;
 }
 
-.calendar:active {
+
+.calendar:focus {
   background-image: url(../img/calendarblue.png);
   background-repeat: no-repeat;
   background-color: transparent;

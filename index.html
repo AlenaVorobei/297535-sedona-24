@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <div class="main-wrapper">
       <header class="main-header">
           <nav class="main-navigation">
             <h1 class="visually-hidden">Город Седона</h1>
-            <a class="header-logo" href="#">
+            <a class="header-logo">
               <img src="img/index-logo.svg" width="140" height="72" alt="Логотип города Седона">
             </a>
             <ul class="site-navigation">
@@ -91,12 +91,12 @@
           <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="date">
               <label for="chek-in-date">Дата заезда:</label>
-              <input type="text" class="chek-in-date" name="chek-in-date" id="chek-in-date" value="24 апреля 2017" required>
+              <input type="text" class="chek-in-date" name="chek-in-date" id="chek-in-date" value="24 апреля 2017">
               <button class="calendar" type="button" aria-label="Календарь"></button>
             </div>
             <div class="date">
               <label for="chek-out-date">Дата выезда:</label>
-              <input type="text" name="chek-out-date" id="chek-out-date" value="4 июля 2017" required>
+              <input type="text" name="chek-out-date" id="chek-out-date" value="4 июля 2017">
               <button class="calendar" type="button" aria-label="Календарь"></button>
             </div>
             <div class="half-width">
